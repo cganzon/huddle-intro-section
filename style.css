@@ -16,6 +16,7 @@
 }
 
 body {
+    min-height: 100vh;
     background: var(--violet);
     background-image: url('./images/bg-mobile.svg');
     color: #fff;
@@ -110,7 +111,24 @@ body {
     padding: 6px 7px;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 564px) {
+    .container {
+        width: 31.813rem;
+    }
+
+    .social {
+        padding-top: 3rem;
+    }
+}
+
+/* @media (min-width: 900px) {
+    body {
+        background-image: url('./images/bg-desktop.svg');
+        background-size: cover;
+    }
+} */
+
+@media (min-width: 890px) {
     body {
         background-image: url('./images/bg-desktop.svg');
         background-size: cover;
@@ -134,11 +152,38 @@ body {
 
     .image {
         padding: 0;
+        width: 45%;
     }
 
     .promo {
         text-align: start;
-        padding-top: 2.7rem;
+        padding-top: 3rem;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .paragraph {
+        font-size: 1rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .register-btn {
+        font-size: 1.2rem;
+        padding: 1rem 4.3rem;
+    }
+
+    .social {
+        justify-content: flex-end;
+        gap: 0.8rem;
+        
+    }
+}
+
+@media (min-width: 1200px) {
+    .image {
+        width: 100%;
     }
 
     .title {
@@ -147,11 +192,6 @@ body {
 
     .paragraph {
         font-size: 1.17rem;
-    }
-
-    .social {
-        justify-content: flex-end;
-        gap: 0.8rem;
     }
 }
 
