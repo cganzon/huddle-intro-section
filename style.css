@@ -124,7 +124,7 @@ body {
 @media (min-width: 890px) {
     body {
         background-image: url('./images/bg-desktop.svg');
-        background-size: contain;
+        background-size: cover;
     }
 
     .container {
@@ -188,6 +188,10 @@ body {
 }
 
 @media (min-width: 1200px) {
+    body {
+        background-size: contain;
+    }
+
     .image {
         width: 100%;
     }
