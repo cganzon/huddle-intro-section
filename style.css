@@ -124,7 +124,7 @@ body {
 @media (min-width: 890px) {
     body {
         background-image: url('./images/bg-desktop.svg');
-        background-size: cover;
+        background-size: contain;
     }
 
     .container {
@@ -134,7 +134,7 @@ body {
 
     .logo {
         max-width: 13rem;
-        padding-top: 3rem;
+        padding-top: 3.5rem;
     }
 
     .ad {
@@ -164,13 +164,26 @@ body {
 
     .register-btn {
         font-size: 1.2rem;
-        padding: 1rem 4.3rem;
+        padding: 1rem 4.2rem;
     }
 
     .social {
         justify-content: flex-end;
-        gap: 0.8rem;
-        
+        gap: 0.7rem;
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
+
+    .fa-facebook-f {
+        padding: 10px 13px;
+    }
+    
+    .fa-twitter {
+        padding: 10px;
+    }
+    
+    .fa-instagram {
+        padding: 10px 11px;
     }
 }
 
